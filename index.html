@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+</head>
+<body>
+    <main>
+        <div id="resultado-box">
+            <img src="./img/imc_padrao.svg" id="img-resultado">
+            <div id="resultado"></div>
+            <span id="imcText"></span>
+        </div>
+
+        <div id="imc-form">
+            <h1>Calcule seu IMC</h1>
+            <div id="sex-box">
+                <p>Sexo</p>
+                <div id="input-radios">
+                
+                    <div class="radio-sex">
+                        <input type="radio" name="sexo" id="masculino" checked required>
+                        <label for="masculino">Masculino</label>
+                    </div> 
+
+                    <div class="radio-sex">
+                        <input type="radio" name="sexo" id="feminino" required>
+                        <label for="feminino">Feminino</label>
+                    </div>   
+                </div>
+            </div>
+
+            <form id="inputs">
+
+                <!-- <div class="input-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" class="input" required>
+                </div> -->
+
+                <div class="input-group">
+                    <label for="peso">Peso (Kg)</label>
+                    <input type="number" id="peso" class="input" step="0.01"  required>
+                </div>
+
+                <div class="input-group">
+                    <label for="altura">Altura (m)</label>
+                    <input type="number" id="altura" class="input" step="0.01" required>
+                </div>
+                <div id="botoes">
+                    <button type="reset" id="btnLimpar">Limpar</button>
+                    <button id="btnCalc">Calcular IMC</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
